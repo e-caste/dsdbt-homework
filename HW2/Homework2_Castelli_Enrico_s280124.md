@@ -77,3 +77,17 @@ Considering only the accuracy of the K-NN classifier for odd values of k, its av
 $acc_{avg,k} = \frac{\sum\nolimits_{k \in 1, 3, 5, 7, 9} acc_k}{5} = \frac{66.44 + 70.26 + 73.77 + 74.84 + 75.20}{5} = \frac{360.47}{5} = 72.09$ %.  
 
 The accuracy of the Naïve Bayes classifier is 72.45%, hence it performs better, in average and with the constraints considered above.
+
+### 5.
+
+![correlation matrix](cm.png)
+
+#### (a)
+
+Seeing the correlation matrix above, we cannot state that the Naïve Bayes independence assumption holds true for the features of the Breast dataset. Even if most of them have a very low correlation or anti-correlation, meaning correlation values near zero, not one of the features is completely independent of all of the others.  
+This makes sense, since the characteristics of an entry in this dataset only refer to a specific tumor of a specific person.
+
+#### (b)
+
+The pair of most correlated attributes is `inv-nodes`-`irradiat` (0.399).  
+The pair of most anti-correlated attributes is `inv-nodes`-`node-caps` (-0.465).
