@@ -51,3 +51,29 @@ The maximal depth increases the number of decisions the Decision Tree can show. 
 From the table above, we can see that with a maximal depth of 1 the tree does not predict any `recurrence` events, so the accuracy is simply the number of `no-recurrence` events divided by the total events multiplied by 100.  
 The minimal gain has no impact on the results in the range [0.01, 0.05]. It has a negative impact in the range [0.06, 1].  
 The maximal depth yields the best results when set with a value of 3. Any value below or above lowers the percentage of correct predictions of the model.
+
+### 4.
+
+| k | screenshot |
+| :-- | :------- |
+| 1 | ![](knn-1.png) |
+| 2 | ![](knn-2.png) |
+| 3 | ![](knn-3.png) |
+| 4 | ![](knn-4.png) |
+| 5 | ![](knn-5.png) |
+| 6 | ![](knn-6.png) |
+| 7 | ![](knn-7.png) |
+| 8 | ![](knn-8.png) |
+| 9 | ![](knn-9.png) |
+| 10 | ![](knn-10.png) |
+
+We can see from the table above that the K-Nearest Neighbor classifier with 10-fold cross-validation yields a correct prediction in at least 70% of the cases for a minimum value of 3. It performs best with a k value of 9, after that the performance starts dropping.  
+Note: the even values of k have been included for completeness, but it is known that K-NN is facilitated in taking a decision when the number of neighbors considered k is odd.
+
+Using the Naïve Bayes classifier with 10-fold cross-validation:
+![naive bayes](nb.png)
+
+Considering only the accuracy of the K-NN classifier for odd values of k, its average performance is:  
+$acc_{avg,k} = \frac{\sum\nolimits_{k \in 1, 3, 5, 7, 9} acc_k}{5} = \frac{66.44 + 70.26 + 73.77 + 74.84 + 75.20}{5} = \frac{360.47}{5} = 72.09$ %.  
+
+The accuracy of the Naïve Bayes classifier is 72.45%, hence it performs better, in average and with the constraints considered above.
