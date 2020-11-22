@@ -10,7 +10,7 @@ The most discriminative parameter, which is the root of the decision tree, is `n
 
 | node-caps       | yes     | no     |   ? |
 | :------------- | :----------: | -----------: | --: |
-|  probability of recurrence | 22.97%   | 55.36%   | 37.5% |
+|  probability of recurrence |  55.36%  | 22.97%   | 37.5% |
 
 #### (b)
 
