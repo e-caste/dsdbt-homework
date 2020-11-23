@@ -68,7 +68,7 @@ The maximal depth yields the best results when set with a value of 3. Any value 
 | 10 | ![](knn-10.png) |
 
 We can see from the table above that the K-Nearest Neighbor classifier with 10-fold cross-validation yields a correct prediction in at least 70% of the cases for a minimum value of 3. It performs best with a k value of 9, after that the performance starts dropping.  
-Note: the even values of k have been included for completeness, but it is known that K-NN is facilitated in taking a decision when the number of neighbors considered k is odd.
+Note: the even values of k have been included for completeness, but it is known that K-NN is facilitated in taking a decision when the number of considered neighbors k is odd.
 
 Using the Naïve Bayes classifier with 10-fold cross-validation:
 ![naive bayes](nb.png)
