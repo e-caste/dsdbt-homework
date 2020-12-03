@@ -4,7 +4,7 @@
 
 #### Conceptual schema
 
-![conceptual](HW1/conceptual_schema.svg)
+![conceptual](conceptual_schema.svg)
 
 #### Logical schema
 
