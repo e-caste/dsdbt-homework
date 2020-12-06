@@ -61,7 +61,7 @@ INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values 
 | `CELL`          | <img src="Screenshot 2020-12-06 at 18.08.09.png" alt="Screenshot 2020-12-06 at 18.08.09" style="zoom:50%;" /> |
 | `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.07.47.png" alt="Screenshot 2020-12-06 at 18.07.47" style="zoom:50%;" /> |
 
-After running 
+After running
 
 ```sql
 INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values (2, sysdate, '333000009', 15, 15, 'O');
@@ -86,6 +86,8 @@ INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values 
 | `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
 | `CELL`          | <img src="Screenshot 2020-12-06 at 18.15.16.png" alt="Screenshot 2020-12-06 at 18.15.16" style="zoom:50%;" /> |
 | `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.16.16.png" alt="Screenshot 2020-12-06 at 18.16.16" style="zoom:50%;" /> |
+
+We notice how the phone that was turned off has been removed from the `TELEPHONE` table.
 
 
 
