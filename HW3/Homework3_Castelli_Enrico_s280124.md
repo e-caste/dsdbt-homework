@@ -185,7 +185,7 @@ INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values 
 
 | Tables          |                                                              |
 | --------------- | :----------------------------------------------------------- |
-| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.32.30.png" alt="Screenshot 2020-12-06 at 18.32.30" style="zoom:50%;" /> |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.30.20.png" alt="Screenshot 2020-12-06 at 18.30.20" style="zoom:50%;" /> |
 | `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
 | `CELL`          | <img src="Screenshot 2020-12-06 at 18.21.58.png" alt="Screenshot 2020-12-06 at 18.21.58" style="zoom:50%;" /> |
 | `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.30.47.png" alt="Screenshot 2020-12-06 at 18.30.47" style="zoom:50%;" /> |
@@ -198,7 +198,7 @@ INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values 
 
 | Tables          |                                                              |
 | --------------- | :----------------------------------------------------------- |
-| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.30.20.png" alt="Screenshot 2020-12-06 at 18.30.20" style="zoom:50%;" /> |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.32.30.png" alt="Screenshot 2020-12-06 at 18.32.30" style="zoom:50%;" /> |
 | `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
 | `CELL`          | <img src="Screenshot 2020-12-06 at 18.21.58.png" alt="Screenshot 2020-12-06 at 18.21.58" style="zoom:50%;" /> |
 | `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.31.56.png" alt="Screenshot 2020-12-06 at 18.31.56" style="zoom:50%;" /> |
@@ -228,6 +228,8 @@ INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values 
 | `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 18.36.00.png" alt="Screenshot 2020-12-06 at 18.36.00" style="zoom:50%;" /> |
 | `CELL`          | <img src="Screenshot 2020-12-06 at 18.33.46.png" alt="Screenshot 2020-12-06 at 18.33.46" style="zoom:50%;" /> |
 | `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.34.28.png" alt="Screenshot 2020-12-06 at 18.34.28" style="zoom:50%;" /> |
+
+We notice how initiating the fourth call triggers an exception to be recorded and does not allow the fourth phone to become active.
 
 
 
