@@ -299,6 +299,8 @@ UPDATE CELL SET MaxCalls = MaxCalls-1;
 | `CELL`          | <img src="Screenshot 2020-12-06 at 19.28.19.png" alt="Screenshot 2020-12-06 at 19.28.19" style="zoom:50%;" /> |
 | `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.34.28.png" alt="Screenshot 2020-12-06 at 18.34.28" style="zoom:50%;" /> |
 
+We notice how no error is raised because the constraint is respected.
+
 After running
 
 ```sql
@@ -314,3 +316,4 @@ UPDATE CELL SET MaxCalls = MaxCalls-10;
 
 ![Screenshot 2020-12-06 at 19.29.21](Screenshot 2020-12-06 at 19.29.21.png)
 
+We notice how the `CELL` table does not change.
