@@ -264,6 +264,8 @@ UPDATE CELL SET MaxCalls = MaxCalls-2;
 | `CELL`          | <img src="Screenshot 2020-12-06 at 19.24.45.png" alt="Screenshot 2020-12-06 at 19.24.45" style="zoom:50%;" /> |
 | `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.34.28.png" alt="Screenshot 2020-12-06 at 18.34.28" style="zoom:50%;" /> |
 
+We notice how only the values of cells 2, 3 and 4 are updated.
+
 
 
 ### 4) Service guarantee
