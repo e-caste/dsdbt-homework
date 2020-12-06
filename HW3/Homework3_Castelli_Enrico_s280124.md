@@ -86,7 +86,25 @@ END;
 
 ### 3) Changing the maximum number of active calls
 
-
+```sql
+CREATE OR REPLACE TRIGGER ChangeMaxCalls
+BEFORE UPDATE OF MaxCalls ON CELL
+FOR EACH ROW
+WHEN (NEW.MaxCalls < OLD.MaxCalls)
+DECLARE
+    CurrentCellCalls NUMBER(38,0);
+BEGIN
+    -- save number of active phones in cell to variable
+    SELECT COUNT(*) INTO CurrentCellCalls
+    FROM TELEPHONE
+    WHERE PhoneState='Active' AND :NEW.x0<=x AND x<:NEW.x1 AND :NEW.y0<=y AND y<:NEW.y1;
+    
+   IF CurrentCellCalls > :NEW.MaxCalls THEN
+    :NEW.MaxCalls := CurrentCellCalls;
+   END IF;
+END;
+/
+```
 
 ### 4) Service guarantee
 
