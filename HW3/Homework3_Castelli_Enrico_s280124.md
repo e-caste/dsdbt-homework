@@ -286,3 +286,31 @@ END;
 /
 ```
 
+After running
+
+```sql
+UPDATE CELL SET MaxCalls = MaxCalls-1;
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.35.36.png" alt="Screenshot 2020-12-06 at 18.35.36" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 18.36.00.png" alt="Screenshot 2020-12-06 at 18.36.00" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 19.28.19.png" alt="Screenshot 2020-12-06 at 19.28.19" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.34.28.png" alt="Screenshot 2020-12-06 at 18.34.28" style="zoom:50%;" /> |
+
+After running
+
+```sql
+UPDATE CELL SET MaxCalls = MaxCalls-10;
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.35.36.png" alt="Screenshot 2020-12-06 at 18.35.36" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 18.36.00.png" alt="Screenshot 2020-12-06 at 18.36.00" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 19.28.19.png" alt="Screenshot 2020-12-06 at 19.28.19" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.34.28.png" alt="Screenshot 2020-12-06 at 18.34.28" style="zoom:50%;" /> |
+
+![Screenshot 2020-12-06 at 19.29.21](Screenshot 2020-12-06 at 19.29.21.png)
+
