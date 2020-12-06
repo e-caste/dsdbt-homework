@@ -87,6 +87,8 @@ INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values 
 | `CELL`          | <img src="Screenshot 2020-12-06 at 18.15.16.png" alt="Screenshot 2020-12-06 at 18.15.16" style="zoom:50%;" /> |
 | `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.16.16.png" alt="Screenshot 2020-12-06 at 18.16.16" style="zoom:50%;" /> |
 
+
+
 ### 2) Starting a phone call
 
 ```sql
@@ -248,6 +250,21 @@ BEGIN
 END;
 /
 ```
+
+After running
+
+```sql
+UPDATE CELL SET MaxCalls = MaxCalls-2;
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.35.36.png" alt="Screenshot 2020-12-06 at 18.35.36" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 18.36.00.png" alt="Screenshot 2020-12-06 at 18.36.00" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 19.24.45.png" alt="Screenshot 2020-12-06 at 19.24.45" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.34.28.png" alt="Screenshot 2020-12-06 at 18.34.28" style="zoom:50%;" /> |
+
+
 
 ### 4) Service guarantee
 
