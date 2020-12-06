@@ -19,7 +19,8 @@ BEGIN
     
     IF :NEW.ChangeType = 'O' THEN
         -- add phone to TELEPHONE table
-        INSERT INTO TELEPHONE VALUES (:NEW.PhoneNo, :NEW.x, :NEW.y, 'On');
+        INSERT INTO TELEPHONE (PhoneNo, X, Y, PhoneState)
+        VALUES (:NEW.PhoneNo, :NEW.x, :NEW.y, 'On');
         -- increase CurrentPhone# in corresponding cell
         UPDATE CELL 
         SET CurrentPhone# = CurrentPhone# + 1 
