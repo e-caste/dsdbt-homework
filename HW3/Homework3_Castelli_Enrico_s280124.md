@@ -270,18 +270,16 @@ UPDATE CELL SET MaxCalls = MaxCalls-2;
 
 ```sql
 CREATE OR REPLACE TRIGGER ServiceGuarantee
-BEFORE UPDATE OF MaxCalls ON CELL
-FOR EACH ROW
+AFTER UPDATE OF MaxCalls ON CELL
 DECLARE
     TotalMaxCalls NUMBER(38,0);
 BEGIN
     -- save the total number of MaxCalls for each cell to variable
     SELECT SUM(MaxCalls) INTO TotalMaxCalls
-    FROM CELL
-    WHERE CellId <> :NEW.CellId;
+    FROM CELL;
     
     -- apply constraint
-    IF TotalMaxCalls + :NEW.MaxCalls <= 30 THEN
+    IF TotalMaxCalls <= 30 THEN
         RAISE_APPLICATION_ERROR(-20000, 'The updated MaxCalls value does not respect the constraint of service guarantee: >30 total MaxCalls');
     END IF;
 END;
