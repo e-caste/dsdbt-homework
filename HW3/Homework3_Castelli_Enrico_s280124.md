@@ -134,6 +134,99 @@ END;
 /
 ```
 
+After running
+
+```sql
+INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values (4, sysdate, '333000001', 3, 3, 'O');
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.20.15.png" alt="Screenshot 2020-12-06 at 18.20.15" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 18.20.38.png" alt="Screenshot 2020-12-06 at 18.20.38" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.19.51.png" alt="Screenshot 2020-12-06 at 18.19.51" style="zoom:50%;" /> |
+
+After running
+
+```sql
+INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values (5, sysdate, '333000004', 5, 5, 'O');
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.22.20.png" alt="Screenshot 2020-12-06 at 18.22.20" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 18.21.58.png" alt="Screenshot 2020-12-06 at 18.21.58" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.22.51.png" alt="Screenshot 2020-12-06 at 18.22.51" style="zoom:50%;" /> |
+
+After running
+
+```sql
+INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values (6, sysdate, '333000004', 5, 5, 'C');
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.28.45.png" alt="Screenshot 2020-12-06 at 18.28.45" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 18.21.58.png" alt="Screenshot 2020-12-06 at 18.21.58" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.28.23.png" alt="Screenshot 2020-12-06 at 18.28.23" style="zoom:50%;" /> |
+
+After running
+
+```sql
+INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values (7, sysdate, '333000001', 3, 3, 'C');
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.32.30.png" alt="Screenshot 2020-12-06 at 18.32.30" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 18.21.58.png" alt="Screenshot 2020-12-06 at 18.21.58" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.30.47.png" alt="Screenshot 2020-12-06 at 18.30.47" style="zoom:50%;" /> |
+
+After running
+
+```sql
+INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values (8, sysdate, '333000010', 3, 3, 'C');
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.30.20.png" alt="Screenshot 2020-12-06 at 18.30.20" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 18.21.58.png" alt="Screenshot 2020-12-06 at 18.21.58" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.31.56.png" alt="Screenshot 2020-12-06 at 18.31.56" style="zoom:50%;" /> |
+
+After running
+
+```sql
+INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values (9, sysdate, '333000020', 4, 4, 'O');
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.34.06.png" alt="Screenshot 2020-12-06 at 18.34.06" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 12.54.32.png" alt="Screenshot 2020-12-06 at 12.54.32" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 18.33.46.png" alt="Screenshot 2020-12-06 at 18.33.46" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.34.28.png" alt="Screenshot 2020-12-06 at 18.34.28" style="zoom:50%;" /> |
+
+After running
+
+```sql
+INSERT INTO STATE_CHANGE(ChangeId, TimeStamp, PhoneNo, x, y, ChangeType) values (10, sysdate, '333000020', 4, 4, 'C');
+```
+
+| Tables          |                                                              |
+| --------------- | :----------------------------------------------------------- |
+| `STATE_CHANGE`  | <img src="Screenshot 2020-12-06 at 18.35.36.png" alt="Screenshot 2020-12-06 at 18.35.36" style="zoom:50%;" /> |
+| `EXCEPTION_LOG` | <img src="Screenshot 2020-12-06 at 18.36.00.png" alt="Screenshot 2020-12-06 at 18.36.00" style="zoom:50%;" /> |
+| `CELL`          | <img src="Screenshot 2020-12-06 at 18.33.46.png" alt="Screenshot 2020-12-06 at 18.33.46" style="zoom:50%;" /> |
+| `TELEPHONE`     | <img src="Screenshot 2020-12-06 at 18.34.28.png" alt="Screenshot 2020-12-06 at 18.34.28" style="zoom:50%;" /> |
+
+
+
 ### 3) Changing the maximum number of active calls
 
 ```sql
