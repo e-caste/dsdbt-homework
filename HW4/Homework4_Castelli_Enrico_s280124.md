@@ -13,7 +13,16 @@
 
 The GROUP BY anticipation of GB BId is not possible, since the antisemijoin below it requires the SId attribute in the tuples of the joined tables.
 
-The GROUP BY anticipation of GB SId TODO
+The GROUP BY anticipation of GB SId, as seen in the figure below, aims to reduce the cardinality of the result set of the right branch as soon as possible (from 2*10^4 to 50).
+
+![HW4 Relational Algebra-3](HW4 Relational Algebra-3.svg)
+
+After this GROUP BY anticipation, the JOIN and GROUP BY types change as following:
+
+| Type of  | CS-B      | CC-OS     | [CC-OS]-S  | Antisemijoin                          | GB SId   | GB BId |
+| -------- | --------- | --------- | ---------- | ------------------------------------- | -------- | ------ |
+| JOIN     | hash join | hash join | merge join | nested loop, inner table on the right |          |        |
+| GROUP BY |           |           |            |                                       | **sort** | hash   |
 
 ### 2. Physical structures
 
