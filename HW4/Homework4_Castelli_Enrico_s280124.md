@@ -17,11 +17,11 @@ The GROUP BY anticipation of GB SId TODO
 
 ### 2. Physical structures
 
-| Table | Index                                  | Access Path          | Access Path Without Index  |
-| ----- | -------------------------------------- | -------------------- | -------------------------- |
-| CS    | primary B+tree on date                 | index range scan     | table access full + filter |
-| B     | primary hash on city                   | full index scan      | table access full + filter |
-| CC    | primary hash on region                 | fast full index scan | table access full + filter |
-| OS    | no index because reduction factor is 1 |                      | table access full          |
-| S     | no index because table is small        |                      | table access full + filter |
+| Table | Index                               | Access Path                        | Access Path Without Index  |
+| ----- | ----------------------------------- | ---------------------------------- | -------------------------- |
+| CS    | primary B+tree on date              | index range scan                   | table access full + filter |
+| B     | secondary hash on (BId, city)       | fast full index scan               | table access full + filter |
+| CC    | secondary hash on region            | full index scan + access by row id | table access full + filter |
+| OS    | no index because selectivity is low |                                    | table access full          |
+| S     | no index because table is small     |                                    | table access full + filter |
 
