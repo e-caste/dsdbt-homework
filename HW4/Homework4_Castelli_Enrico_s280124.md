@@ -6,7 +6,7 @@
 
 <img src="HW4 Relational Algebra.svg" alt="HW4 Relational Algebra" style="zoom:100%;" />
 
-| Type of  | CS-B      | CC-OS     | [CC-OS]-S  | antisemijoin                          | GB SId  | GB BId |
+| Type of  | CS-B      | CC-OS     | [CC-OS]-S  | Antisemijoin                          | GB SId  | GB BId |
 | -------- | --------- | --------- | ---------- | ------------------------------------- | ------- | ------ |
 | JOIN     | hash join | hash join | merge join | nested loop, inner table on the right |         |        |
 | GROUP BY |           |           |            |                                       | no sort | hash   |
@@ -17,11 +17,11 @@ The GROUP BY anticipation of GB SId TODO
 
 ### 2. Physical structures
 
-| Table | Index                                  | Access Path                             |
-| ----- | -------------------------------------- | --------------------------------------- |
-| CS    | primary B+tree on date                 | index range scan                        |
-| B     | primary hash on city                   | full index scan                         |
-| CC    | secondary hash on region               | fast full index scan + access by row id |
-| OS    | no index because reduction factor is 1 |                                         |
-| S     | no index because table is small        |                                         |
+| Table | Index                                  | Access Path          | Access Path Without Index  |
+| ----- | -------------------------------------- | -------------------- | -------------------------- |
+| CS    | primary B+tree on date                 | index range scan     | table access full + filter |
+| B     | primary hash on city                   | full index scan      | table access full + filter |
+| CC    | primary hash on region                 | fast full index scan | table access full + filter |
+| OS    | no index because reduction factor is 1 |                      | table access full          |
+| S     | no index because table is small        |                      | table access full + filter |
 
