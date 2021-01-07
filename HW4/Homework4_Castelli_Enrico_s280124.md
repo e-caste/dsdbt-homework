@@ -33,4 +33,3 @@ After this GROUP BY anticipation, the JOIN and GROUP BY types change as followin
 | CC    | secondary hash on region            | full index scan + access by row id | table access full + filter |
 | OS    | no index because selectivity is low |                                    | table access full          |
 | S     | no index because table is small     |                                    | table access full + filter |
-
