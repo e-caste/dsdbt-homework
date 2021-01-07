@@ -6,10 +6,10 @@
 
 <img src="HW4 Relational Algebra.svg" alt="HW4 Relational Algebra" style="zoom:100%;" />
 
-| Type of  | CS-B      | CC-OS     | [CC-OS]-S                  | antisemijoin                          | GB SId | GB BId |
-| -------- | --------- | --------- | -------------------------- | ------------------------------------- | ------ | ------ |
-| JOIN     | hash join | hash join | nested loop, S inner table | nested loop, inner table on the right |        |        |
-| GROUP BY |           |           |                            |                                       | sort   | hash   |
+| Type of  | CS-B      | CC-OS     | [CC-OS]-S  | antisemijoin                          | GB SId  | GB BId |
+| -------- | --------- | --------- | ---------- | ------------------------------------- | ------- | ------ |
+| JOIN     | hash join | hash join | merge join | nested loop, inner table on the right |         |        |
+| GROUP BY |           |           |            |                                       | no sort | hash   |
 
 The GROUP BY anticipation of GB BId is not possible, since the antisemijoin below it requires the SId attribute in the tuples of the joined tables.
 
